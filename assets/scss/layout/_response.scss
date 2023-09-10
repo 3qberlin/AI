@@ -90,6 +90,10 @@
   .d-flex.justify-content-between.flex-wrap ul li {
     width: 100%;
   }
+
+  button {
+    width: 100%;
+  }
 }
 
 @include media-breakpoint-down(xxl) {
@@ -99,6 +103,12 @@
     @include media-breakpoint-down(lg) {
       margin-top: -750px !important;
     }
+  }
+}
+
+.mt-n600 {
+  @include media-breakpoint-down(lg) {
+    margin-top: -1000px !important;
   }
 }
 
