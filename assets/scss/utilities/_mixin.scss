@@ -1,0 +1,110 @@
+@mixin gradient-y($start-color: $primary, $end-color: $secondary) {
+  background-image: linear-gradient(180deg, $start-color 0%, $end-color 100%);
+}
+
+@mixin gradient-x($start-color: $primary, $end-color: $secondary) {
+  background-image: linear-gradient(90deg, $start-color 0%, $end-color 100%);
+}
+
+@mixin radial-gradient($start-color: $neutral-200, $end-color: $secondary) {
+  background: radial-gradient(50% 50% at 50% 50%, $end-color 0%, $start-color 100%);
+}
+
+@mixin radial($start-color: $neutral-200, $end-color: $black) {
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background: radial-gradient(50% 50% at 50% 50%,
+      $start-color 0%,
+      rgba(0, 0, 0, 0) 100%);
+}
+
+@mixin share {
+  background: radial-gradient(50% 50% at 50% 50%, #000 0%, #28085C 100%);
+}
+
+@mixin share2 {
+  background: radial-gradient(50% 50% at 50% 50%, #000 0%, #28085C 100%);
+}
+
+@mixin mb-0 {
+  margin-bottom: 0px !important;
+}
+
+@mixin contentUs{
+  background-color: #1F0F39;
+}
+
+@mixin faq{
+  background: linear-gradient(180deg, #7000FF 0%, #11002D 100%);
+}
+
+.gradient-y {
+  @include gradient-y;
+}
+
+.gradient-x {
+  @include gradient-x;
+}
+
+.gradient-x-rotate {
+  @include gradient-x;
+  transform: rotate(180deg);
+}
+
+.radial {
+  @include radial;
+}
+
+.radial-gradient {
+  @include radial-gradient;
+  height: 1080px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  @include mb-0;
+}
+
+.share{
+  @include share;
+  height:1080px;
+  @include media-breakpoint-down(lg){
+    height: 1800px;
+  }
+}
+
+.share2{
+  @include share;
+  height:1080px;
+  @include media-breakpoint-down(lg){
+    height: 1800px;
+  }
+  @include media-breakpoint-down(md){
+    height: 1400px;
+  }
+  @include media-breakpoint-down(sm){
+    height: 1080px;
+  }
+}
+
+.share2{
+  @media (max-width:400px){
+    height:800px;
+  }
+}
+
+.contentUs{
+  @include contentUs;
+  height: 622px;
+}
+
+.faq{
+  @include faq;
+  height:79px;
+}
+

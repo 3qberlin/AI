@@ -1,0 +1,55 @@
+.font-purple {
+    color: $purple;
+}
+
+.font-response {
+    color: $gray-800;
+}
+
+.font-letter-spacing-16px {
+    letter-spacing: 16px;
+}
+
+.font-letter-spacing-20px {
+    letter-spacing: 20px;
+}
+
+.font-letter-spacing-16px {
+    letter-spacing: 16px;
+}
+
+.font-letter-spacing-48px {
+    letter-spacing: 48px;
+}
+
+.font-letter-spacing-80px {
+    letter-spacing: 80px;
+
+}
+
+.font-400px{
+    font-size: 400px !important;
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .font-letter-spacing-80px {
+        letter-spacing: 36px;
+    }
+
+    @include media-breakpoint-down(md) {
+        .font-letter-spacing-80px {
+            letter-spacing: 26px;
+        }
+
+        .font-letter-spacing-16px {
+            letter-spacing: 4.8px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .font-letter-spacing-80px {
+            letter-spacing: 16px;
+        }
+    }
+}

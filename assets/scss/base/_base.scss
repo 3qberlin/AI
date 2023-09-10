@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Saira+Extra+Condensed:wght@300&family=Shrikhand&display=swap");
+
+body {
+  font-family: "Shrikhand", cursive;
+  color: $white;
+}
+
+.noto {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.font-saira {
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+.font-shrikhand {
+  font-family: 'Shrikhand', cursive;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 900;
+}
+
+.black {
+  font-weight: 900;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}

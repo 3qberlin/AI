@@ -1,0 +1,26 @@
+// 這裡載入 scss下面 的 _.scss檔案
+// 引入格式
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 引入變數-客製化
+@import "./components/variables";
+
+// 引入bootstrap全部css
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "../scss/base/base";
+
+@import "../scss/utilities/custom-color";
+@import "../scss/utilities/mixin";
+@import "../scss/utilities/spacing";
+
+@import "../scss/components/state";
+@import "../scss/components/arrow";
+@import "../scss/components/shadow";
+@import "../scss/components/font";
+@import "../scss/components/bgImg";
+@import "../scss/components/color";
+@import "../scss/components/card";
+@import "../scss/components/border";
+
+@import "../scss/layout/response";

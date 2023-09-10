@@ -1,0 +1,41 @@
+.hover {
+  &:hover {
+    background-color: $white !important;
+    color: $primary;
+  }
+}
+
+.activeCustomize {
+  background-color: $white !important;
+  color: $dark;
+}
+
+
+.alphaboxCircle {
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-180{
+  transform:rotate(180deg);
+}
+
+.opacity-08{
+  opacity: 0.4;
+}
+
+.opacity-10{
+  opacity: 1;
+}

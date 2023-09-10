@@ -1,0 +1,116 @@
+@include media-breakpoint-down(lg) {
+  .navbar-collapse ul {
+    width: 100%;
+  }
+
+  .navbar-collapse ul li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-collapse ul li a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .col-12.col-md-3.noto.bold.mt-56.border-top.border-1.pt-8 {
+    width: 100%;
+    text-align: left;
+  }
+
+  .infoCard ul {
+    margin: 0 auto;
+    gap: 24px;
+    margin-top: 72px;
+  }
+
+  .infoCard ul li {
+    width: 351px !important;
+    margin: 0 auto !important;
+    padding: 0px;
+  }
+
+  .infoCard ul li img {
+    width: 351px !important;
+    object-fit: cover;
+    object-position: top center;
+    height: 351px !important;
+  }
+
+  .infoCard ul li:nth-child(2) {
+    margin-left: 0px !important;
+    margin: 0 auto !important;
+  }
+
+  .infoCard ul li:nth-child(3) {
+    margin-right: 0px !important;
+    margin: 0 auto !important;
+  }
+
+  .d-flex.flex-wrap.list-unstyled.mt-32.mt-lg-40 li {
+    width: 100% !important;
+  }
+
+  .d-flex.flex-wrap.list-unstyled.mt-32.mt-lg-40 li:nth-child(2) {
+    border-right: 0px !important;
+  }
+
+  .list-unstyled.overflow-auto.d-flex.justify-content-stretch {
+    display: flex;
+    justify-content: center;
+  }
+
+  .list-unstyled.overflow-auto.d-flex.justify-content-stretch li {
+    width: 351px;
+    height: 351px;
+  }
+
+  .d-flex.flex-wrap.list-unstyled.text-white li {
+    width: 50%;
+  }
+
+  .aiintro-card-content {
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .font-400px {
+    font-size: 128px !important;
+  }
+
+  .d-flex.justify-content-between.flex-wrap>* {
+    width: 100%;
+  }
+
+  .d-flex.justify-content-between.flex-wrap ul li {
+    width: 100%;
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .gradient-x {
+    margin-top: -900px !important;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: -750px !important;
+    }
+  }
+}
+
+.noto.display-2 {
+  letter-spacing: 48px;
+
+  @include media-breakpoint-down(lg) {
+    letter-spacing: 24px;
+    font-size: 24px;
+  }
+}
+
+h4 {
+  @include rfs(2rem);
+}

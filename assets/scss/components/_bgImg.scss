@@ -1,0 +1,31 @@
+.bgImg {
+  &-header {
+    background-image: url(../images/index/background/home_background.png);
+    height: 960px;
+    background-size: cover;
+    background-position: center bottom;
+  }
+  &-intro{
+    background-image: url(../images/index/background/carousel.png);
+    height: 1080px;
+    background-size: cover;
+    background-position: top bottom;
+    filter: blur(0.6rem);
+    z-index: -1;
+  }
+}
+
+.bgImg-header{
+  @include media-breakpoint-down(lg){
+    height: 1800px;
+  }
+  @include media-breakpoint-down(md){
+    height: 2430px;
+  }
+}
+
+.bgImg-intro{
+  @include media-breakpoint-down(lg){
+    height: 791;
+  }
+}
