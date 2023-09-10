@@ -80,7 +80,7 @@ ul {
 
 .share2{
   @include share;
-  height:1080px;
+  height:1148px;
   @include media-breakpoint-down(lg){
     height: 1800px;
   }
